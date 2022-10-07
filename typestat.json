@@ -1,0 +1,43 @@
+[
+  {
+    "fixes": {
+      "incompleteTypes": true,
+      "noImplicitAny": true,
+      "inferableTypes": true,
+      "noImplicitThis": true,
+      "strictNonNullAssertions": true
+    },
+    "include": ["test/**/*.{ts,tsx}"],
+    "types": {
+      "strictNullChecks": true
+    },
+    "projectPath": "./packages/shared-tsconfig/react-library.json"
+  },
+  {
+    "exclude": ["test/**/*.{ts,tsx}"],
+    "fixes": {
+      "incompleteTypes": true,
+      "noImplicitAny": true,
+      "inferableTypes": true,
+      "noImplicitThis": true
+    },
+    "include": ["./packages/**/*.{ts,tsx}"],
+    "types": {
+      "strictNullChecks": true
+    },
+    "projectPath": "./packages/shared-tsconfig/react-library.json"
+  },
+  {
+    "fixes": {
+      "incompleteTypes": true,
+      "noImplicitAny": true,
+      "inferableTypes": true,
+      "noImplicitThis": true
+    },
+    "include": ["test/**/*.{ts,tsx}", "./packages/**/*.{ts,tsx}"],
+    "types": {
+      "strictNullChecks": true
+    },
+    "projectPath": "./packages/shared-tsconfig/react-library.json"
+  }
+]
